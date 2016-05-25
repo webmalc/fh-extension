@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "FH-TV",
+  "short_name": "FH-TV",
+  "description": "FH-TV extension.",
+  "version": "0.0.1",
+  "author": "webmalc@gmail.com",
+
+
+  "icons": {
+    "16": "img/tv-icon_16.png",
+    "32": "img/tv-icon_32.png",
+    "32": "img/tv-icon_24.png",
+    "48": "img/tv-icon_48.png",
+    "128": "img/tv-icon_128.png"
+  },
+  "browser_action": {
+    "default_title": "Open FH-TV channels list."
+  },
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

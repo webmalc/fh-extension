@@ -1,0 +1,11 @@
+#dashboard ul {
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+#dashboard ul li {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 120%;
+    color: #337ab7;
+    cursor: pointer;
+}

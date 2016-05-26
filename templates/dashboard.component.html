@@ -1,0 +1,14 @@
+
+<nav id="dashboard">
+    <div *ngFor="let category of channels">
+    <h3>
+        <small><i class="{{ category.icon}}"></i></small> {{ category.name}}
+    </h3>
+    <ul>
+        <li *ngFor="let channel of category.channels" (click)="gotoDetail(category, channel)">
+            {{ channel.name }}
+        </li>
+    </ul>
+    </div>
+
+</nav>

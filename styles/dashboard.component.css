@@ -4,7 +4,8 @@
 }
 #dashboard ul li {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
     font-size: 120%;
     color: #337ab7;
     cursor: pointer;

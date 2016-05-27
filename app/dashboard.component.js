@@ -20,7 +20,21 @@ var DashboardComponent = (function () {
     DashboardComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.channelService.getChannels()
-            .then(function (channels) { return _this.channels = channels; });
+            .then(function (categories) {
+            for (var _i = 0, categories_1 = categories; _i < categories_1.length; _i++) {
+                var category = categories_1[_i];
+                category.channels.sort(function (a, b) {
+                    if (a.name > b.name) {
+                        return 1;
+                    }
+                    if (a.name < b.name) {
+                        return -1;
+                    }
+                    return 0;
+                });
+                _this.channels.push(category);
+            }
+        });
     };
     DashboardComponent.prototype.gotoDetail = function (category, channel) {
         this.router.navigate(['ChannelDetail', { id: channel.id, categoryId: category.id }]);

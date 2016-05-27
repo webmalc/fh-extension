@@ -1,70 +1,23 @@
 "use strict";
+var channel_1 = require('./channel');
 exports.CHANNELS = [
     {
         "id": 1,
         "name": "Children",
-        "icon": "fa fa-user",
+        "icon": "fa fa-child",
         "channels": [
-            {
-                "id": 3521,
-                "name": "Disney Channel",
-                "session": "zFDmDZdh2XH1m7vivyAXI"
-            },
-            {
-                "id": 3565,
-                "name": "Nickelodeon",
-                "session": "RdrI2jTNJI9hmXAYsZdGS"
-            },
-            {
-                "id": 3489,
-                "name": "2x2",
-                "session": "Fy4xEkNkzYVXmLmgnMg9k"
-            },
-            {
-                "id": 3561,
-                "name": "Cartoon Network",
-                "session": "R1Ft3PE1xSbblhaKPdsst"
-            },
-            {
-                "id": 3620,
-                "name": "Gulli",
-                "session": "pRvXsjYeTnJYAU4A89EsF"
-            },
-            {
-                "id": 3614,
-                "name": "JimJam",
-                "session": "ln4Za4fV9fOohMVlifMXf"
-            },
-            {
-                "id": 3625,
-                "name": "TiJi",
-                "session": "Mz8XprDzZ4lAR5lXplkSb"
-            },
-            {
-                "id": 3564,
-                "name": "Детский мир",
-                "session": "0jxdeODjPmldATs6P5nmr"
-            },
-            {
-                "id": 3535,
-                "name": "Карусель",
-                "session": "mkLtFy9kdyKZBg1XBGURv"
-            },
-            {
-                "id": 3503,
-                "name": "Мультимания",
-                "session": "mzaKnfHbEtFtoYPLUcvR5"
-            },
-            {
-                "id": 3510,
-                "name": "Радость Моя",
-                "session": "G5Y4VmcZ1xNmI7IlBjr14"
-            },
-            {
-                "id": 3517,
-                "name": "Улыбка ребенка",
-                "session": "mPEoMFeTV1auuYHBzhkOX"
-            }
+            new channel_1.Channel(3521, "Disney Channel", "zFDmDZdh2XH1m7vivyAXI", ""),
+            new channel_1.Channel(3565, "Nickelodeon", "RdrI2jTNJI9hmXAYsZdGS", ""),
+            new channel_1.Channel(3489, "2x2", "Fy4xEkNkzYVXmLmgnMg9k", ""),
+            new channel_1.Channel(3561, "Cartoon Network", "R1Ft3PE1xSbblhaKPdsst", ""),
+            new channel_1.Channel(3620, "Gulli", "pRvXsjYeTnJYAU4A89EsF", ""),
+            new channel_1.Channel(3614, "JimJam", "ln4Za4fV9fOohMVlifMXf", ""),
+            new channel_1.Channel(3625, "TiJi", "Mz8XprDzZ4lAR5lXplkSb", ""),
+            new channel_1.Channel(3564, "Детский мир", "0jxdeODjPmldATs6P5nmr", ""),
+            new channel_1.Channel(3535, "Карусель", "mkLtFy9kdyKZBg1XBGURv", ""),
+            new channel_1.Channel(3503, "Мультимания", "mzaKnfHbEtFtoYPLUcvR5", ""),
+            new channel_1.Channel(3510, "Радость Моя", "G5Y4VmcZ1xNmI7IlBjr14", ""),
+            new channel_1.Channel(3517, "Улыбка ребенка", "mPEoMFeTV1auuYHBzhkOX", ""),
         ]
     },
     {
@@ -72,306 +25,66 @@ exports.CHANNELS = [
         "name": "Education & Entertainment",
         "icon": "fa fa-flask",
         "channels": [
-            {
-                "id": 3594,
-                "name": "24 Док",
-                "session": "hn1oKGsAK734hoodDX0hg"
-            },
-            {
-                "id": 3610,
-                "name": "24 Техно",
-                "session": "hlSCuSfLcTTrJ03frrRnj"
-            },
-            {
-                "id": 3576,
-                "name": "365 Дней",
-                "session": "mvGBCVeJTo5iAXTP1HVX2"
-            },
-            {
-                "id": 3504,
-                "name": "Amazing Life",
-                "session": "fxe2vexE0hs6s0YLGuNi4"
-            },
-            {
-                "id": 3563,
-                "name": "Animal Planet",
-                "session": "FpFkRsPGVxMiCDEH29H0p"
-            },
-            {
-                "id": 3646,
-                "name": "Da Vinci Learning",
-                "session": "9MfYlXKFUztraNJhCKe8X"
-            },
-            {
-                "id": 3633,
-                "name": "Discovery Channel",
-                "session": "TZst8U5bSP4U9R0GFbFub"
-            },
-            {
-                "id": 3593,
-                "name": "Discovery Science",
-                "session": "ho178npzc6i2mCZ8v1ObT"
-            },
-            {
-                "id": 3567,
-                "name": "Discovery World",
-                "session": "z0AyG7zbpBjGpgEEy4Hsb"
-            },
-            {
-                "id": 3631,
-                "name": "DIVA Universal Russia",
-                "session": "7cPBHdtexuE3ZRuMUDDHa"
-            },
-            {
-                "id": 3628,
-                "name": "English Club TV",
-                "session": "tU7P4reteMphtROxaUTun"
-            },
-            {
-                "id": 3606,
-                "name": "Fox",
-                "session": "6HUv8Fdv9ofBGOLj0aVtu"
-            },
-            {
-                "id": 3616,
-                "name": "Fox Life",
-                "session": "Ehoxr8zEkVzSFUPbZb0eh"
-            },
-            {
-                "id": 3548,
-                "name": "GlobalStar TV",
-                "session": "EekkfamfeuGOhKz6N7cd8"
-            },
-            {
-                "id": 3632,
-                "name": "Investigation Discovery Europe",
-                "session": "ODHYNU5vkFFeaCLXarUf0"
-            },
-            {
-                "id": 3617,
-                "name": "Nat Geo Wild",
-                "session": "kT5PDvnsaFNGi1ES5SgRR"
-            },
-            {
-                "id": 3577,
-                "name": "National Geographic",
-                "session": "F2NHSXPYOG0yAO3X4kYzZ"
-            },
-            {
-                "id": 3661,
-                "name": "RTVi",
-                "session": "RkPzzeeR14Ce1RgIX2sTs"
-            },
-            {
-                "id": 3621,
-                "name": "Russian Travel Guide",
-                "session": "O8ygEHKVPR5fEreejAEEe"
-            },
-            {
-                "id": 3619,
-                "name": "SET",
-                "session": "BLBT9J95a4J9rPC1rnG9i"
-            },
-            {
-                "id": 3605,
-                "name": "Sony Sci-Fi",
-                "session": "MDARIKhdemFPNnOnmJngi"
-            },
-            {
-                "id": 3513,
-                "name": "STV",
-                "session": "Ze6EsieGpmTOdy5jrPosd"
-            },
-            {
-                "id": 3630,
-                "name": "SyFy Universal",
-                "session": "ZVj7Zxg7XYV2Toj3tPhHA"
-            },
-            {
-                "id": 3648,
-                "name": "TLC",
-                "session": "utYtsPndx7PV4Dcj7C01N"
-            },
-            {
-                "id": 3582,
-                "name": "Travel+adventure",
-                "session": "zGHLsZYEH1Z3NijtynPt5"
-            },
-            {
-                "id": 5753,
-                "name": "Travel",
-                "session": "4g8c7cSsS7E9KdbHKOAYSK1n94YtFcYz"
-            },
-            {
-                "id": 3525,
-                "name": "TV Arm Ru",
-                "session": "Rcxyz6B5eofvAoJV4tg1z"
-            },
-            {
-                "id": 3615,
-                "name": "Universal Channel",
-                "session": "Zz5osVBJjfoDLULz8NU98"
-            },
-            {
-                "id": 3583,
-                "name": "Viasat Explorer",
-                "session": "IJnF7NcDj1DpveY2udsHx"
-            },
-            {
-                "id": 3584,
-                "name": "Viasat History",
-                "session": "Z1TzG06C8kaGzGDdJ8mzA"
-            },
-            {
-                "id": 3645,
-                "name": "Viasat Nature East",
-                "session": "EVFrL1v6ySTmCiTBelyol"
-            },
-            {
-                "id": 3573,
-                "name": "Авто плюс",
-                "session": "aThLN4krAkAn6OkT7Mx9X"
-            },
-            {
-                "id": 3676,
-                "name": "Вопросы и ответы",
-                "session": "fsItLpZvjUt8uDE3pzx1K"
-            },
-            {
-                "id": 3640,
-                "name": "Домашние животные",
-                "session": "ZT8KDYG52OyuHkTg2x4Zz"
-            },
-            {
-                "id": 3484,
-                "name": "Домашний",
-                "session": "bzG9aCnigZ92XJtKfnBVM"
-            },
-            {
-                "id": 3490,
-                "name": "Звезда",
-                "session": "oiLJTSZkDC8XpEl7zEATZ"
-            },
-            {
-                "id": 3545,
-                "name": "Знание",
-                "session": "tJgn3NsravHi8h3O7ciza"
-            },
-            {
-                "id": 3618,
-                "name": "Зоо ТВ",
-                "session": "6OFhK6LaNBumIJfl4xmn5"
-            },
-            {
-                "id": 3609,
-                "name": "Кто есть кто",
-                "session": "NZtN9sZlPJmECefUDBVnj"
-            },
-            {
-                "id": 3608,
-                "name": "Кухня ТВ",
-                "session": "NNsTzXkjav7Iz26vxBxmK"
-            },
-            {
-                "id": 3626,
-                "name": "Моя планета",
-                "session": "ETckBghyPHTBR9xZf7YyX"
-            },
-            {
-                "id": 3650,
-                "name": "Нано ТВ",
-                "session": "ZP8TXgbI1dXnexCk6EOn0"
-            },
-            {
-                "id": 3642,
-                "name": "Наука 2.0",
-                "session": "9EXNfHRBoLp6I0SPbpFfc"
-            },
-            {
-                "id": 3590,
-                "name": "Охота и рыбалка",
-                "session": "SSOfLUx8LsxPRPjG1E0n0"
-            },
-            {
-                "id": 3627,
-                "name": "Охотник и рыболов",
-                "session": "OJr68XHgoBZ8g5J3rHEJ6"
-            },
-            {
-                "id": 3592,
-                "name": "Парк развлечений",
-                "session": "jrKtYBZYOYCofyl36sgxh"
-            },
-            {
-                "id": 3488,
-                "name": "Перец",
-                "session": "IA6FrlrnK6sUPAniN9afx"
-            },
-            {
-                "id": 3543,
-                "name": "Просвещение",
-                "session": "0InhblzL48kt3PLd81N3h"
-            },
-            {
-                "id": 3641,
-                "name": "Психология 21",
-                "session": "zIINSlLSs0R2n14BoEtlP"
-            },
-            {
-                "id": 3487,
-                "name": "Пятница",
-                "session": "NdvohteXlllVV1D8ClpC5"
-            },
-            {
-                "id": 3524,
-                "name": "РЖД",
-                "session": "tBl5A53KBS4KueLV8tyk7"
-            },
-            {
-                "id": 3482,
-                "name": "Россия К",
-                "session": "5lyjJ6hd9hdVcalVER0A2"
-            },
-            {
-                "id": 3515,
-                "name": "РТР Планета",
-                "session": "f2sYVuGt7bnhAySvGXtN2"
-            },
-            {
-                "id": 3595,
-                "name": "Совершенно секретно",
-                "session": "YojFzmFAK9hOZtdXiDDAJ"
-            },
-            {
-                "id": 3486,
-                "name": "СТС",
-                "session": "HiaMGNa6mjRgBy0aDoVBT"
-            },
-            {
-                "id": 3537,
-                "name": "ТБН",
-                "session": "PsNHH87dMVLVVosApmNA6"
-            },
-            {
-                "id": 3637,
-                "name": "Телекафе",
-                "session": "H6e9l9bRJzSIMY2Ncfnbd"
-            },
-            {
-                "id": 3483,
-                "name": "ТНТ",
-                "session": "dVE62vEGLVVF11c8aZfoV"
-            },
-            {
-                "id": 3554,
-                "name": "CCTV 9 Documentary",
-                "session": "7JbfOxL9Up0EKZGTFCTZS"
-            },
-            {
-                "id": 3629,
-                "name": "Comedy TV",
-                "session": "YHLurgYa7FlXeF8mpaYBa"
-            }
+            new channel_1.Channel(3594, "24 Док", "hn1oKGsAK734hoodDX0hg", ""),
+            new channel_1.Channel(3610, "24 Техно", "hlSCuSfLcTTrJ03frrRnj", ""),
+            new channel_1.Channel(3576, "365 Дней", "mvGBCVeJTo5iAXTP1HVX2", ""),
+            new channel_1.Channel(3504, "Amazing Life", "fxe2vexE0hs6s0YLGuNi4", ""),
+            new channel_1.Channel(3563, "Animal Planet", "FpFkRsPGVxMiCDEH29H0p", ""),
+            new channel_1.Channel(3646, "Da Vinci Learning", "9MfYlXKFUztraNJhCKe8X", ""),
+            new channel_1.Channel(3633, "Discovery Channel", "TZst8U5bSP4U9R0GFbFub", ""),
+            new channel_1.Channel(3593, "Discovery Science", "ho178npzc6i2mCZ8v1ObT", ""),
+            new channel_1.Channel(3567, "Discovery World", "z0AyG7zbpBjGpgEEy4Hsb", ""),
+            new channel_1.Channel(3631, "DIVA Universal Russia", "7cPBHdtexuE3ZRuMUDDHa", ""),
+            new channel_1.Channel(3628, "English Club TV", "tU7P4reteMphtROxaUTun", ""),
+            new channel_1.Channel(3606, "Fox", "6HUv8Fdv9ofBGOLj0aVtu", ""),
+            new channel_1.Channel(3616, "Fox Life", "Ehoxr8zEkVzSFUPbZb0eh", ""),
+            new channel_1.Channel(3548, "GlobalStar TV", "EekkfamfeuGOhKz6N7cd8", ""),
+            new channel_1.Channel(3632, "Investigation Discovery Europe", "ODHYNU5vkFFeaCLXarUf0", ""),
+            new channel_1.Channel(3617, "Nat Geo Wild", "kT5PDvnsaFNGi1ES5SgRR", ""),
+            new channel_1.Channel(3577, "National Geographic", "F2NHSXPYOG0yAO3X4kYzZ", ""),
+            new channel_1.Channel(3661, "RTVi", "RkPzzeeR14Ce1RgIX2sTs", ""),
+            new channel_1.Channel(3621, "Russian Travel Guide", "O8ygEHKVPR5fEreejAEEe", ""),
+            new channel_1.Channel(3619, "SET", "BLBT9J95a4J9rPC1rnG9i", ""),
+            new channel_1.Channel(3605, "Sony Sci-Fi", "MDARIKhdemFPNnOnmJngi", ""),
+            new channel_1.Channel(3513, "STV", "Ze6EsieGpmTOdy5jrPosd", ""),
+            new channel_1.Channel(3630, "SyFy Universal", "ZVj7Zxg7XYV2Toj3tPhHA", ""),
+            new channel_1.Channel(3648, "TLC", "utYtsPndx7PV4Dcj7C01N", ""),
+            new channel_1.Channel(3582, "Travel+adventure", "zGHLsZYEH1Z3NijtynPt5", "http://only-tv.org/uppod-hls.swf?comment=1&st=41AchBG5DZjaI=xz58ixanpEdQVQm5JBpdwL9m0ybpm5vzmQwDNBGoi3BwDRW5nTtu0c9BMrk&debug=1&file=http://50.7.180.2:8080/travel_adventure/index.m3u8?token=9619411a9fd92c685b9a03061154e4f6"),
+            new channel_1.Channel(5753, "Travel", "4g8c7cSsS7E9KdbHKOAYSK1n94YtFcYz", ""),
+            new channel_1.Channel(3525, "TV Arm Ru", "Rcxyz6B5eofvAoJV4tg1z", ""),
+            new channel_1.Channel(3615, "Universal Channel", "Zz5osVBJjfoDLULz8NU98", ""),
+            new channel_1.Channel(3583, "Viasat Explorer", "IJnF7NcDj1DpveY2udsHx", ""),
+            new channel_1.Channel(3584, "Viasat History", "Z1TzG06C8kaGzGDdJ8mzA", ""),
+            new channel_1.Channel(3645, "Viasat Nature East", "EVFrL1v6ySTmCiTBelyol", ""),
+            new channel_1.Channel(3573, "Авто плюс", "aThLN4krAkAn6OkT7Mx9X", ""),
+            new channel_1.Channel(3676, "Вопросы и ответы", "fsItLpZvjUt8uDE3pzx1K", ""),
+            new channel_1.Channel(3640, "Домашние животные", "ZT8KDYG52OyuHkTg2x4Zz", ""),
+            new channel_1.Channel(3484, "Домашний", "bzG9aCnigZ92XJtKfnBVM", ""),
+            new channel_1.Channel(3490, "Звезда", "oiLJTSZkDC8XpEl7zEATZ", ""),
+            new channel_1.Channel(3545, "Знание", "tJgn3NsravHi8h3O7ciza", ""),
+            new channel_1.Channel(3618, "Зоо ТВ", "6OFhK6LaNBumIJfl4xmn5", ""),
+            new channel_1.Channel(3609, "Кто есть кто", "NZtN9sZlPJmECefUDBVnj", ""),
+            new channel_1.Channel(3608, "Кухня ТВ", "NNsTzXkjav7Iz26vxBxmK", ""),
+            new channel_1.Channel(3626, "Моя планета", "ETckBghyPHTBR9xZf7YyX", ""),
+            new channel_1.Channel(3650, "Нано ТВ", "ZP8TXgbI1dXnexCk6EOn0", ""),
+            new channel_1.Channel(3642, "Наука 2.0", "9EXNfHRBoLp6I0SPbpFfc", ""),
+            new channel_1.Channel(3590, "Охота и рыбалка", "SSOfLUx8LsxPRPjG1E0n0", ""),
+            new channel_1.Channel(3627, "Охотник и рыболов", "OJr68XHgoBZ8g5J3rHEJ6", ""),
+            new channel_1.Channel(3592, "Парк развлечений", "jrKtYBZYOYCofyl36sgxh", ""),
+            new channel_1.Channel(3488, "Перец", "IA6FrlrnK6sUPAniN9afx", ""),
+            new channel_1.Channel(3543, "Просвещение", "0InhblzL48kt3PLd81N3h", ""),
+            new channel_1.Channel(3641, "Психология 21", "zIINSlLSs0R2n14BoEtlP", ""),
+            new channel_1.Channel(3487, "Пятница", "NdvohteXlllVV1D8ClpC5", ""),
+            new channel_1.Channel(3524, "РЖД", "tBl5A53KBS4KueLV8tyk7", ""),
+            new channel_1.Channel(3482, "Россия К", "5lyjJ6hd9hdVcalVER0A2", ""),
+            new channel_1.Channel(3515, "РТР Планета", "f2sYVuGt7bnhAySvGXtN2", ""),
+            new channel_1.Channel(3595, "Совершенно секретно", "YojFzmFAK9hOZtdXiDDAJ", ""),
+            new channel_1.Channel(3486, "СТС", "HiaMGNa6mjRgBy0aDoVBT", ""),
+            new channel_1.Channel(3537, "ТБН", "PsNHH87dMVLVVosApmNA6", ""),
+            new channel_1.Channel(3637, "Телекафе", "H6e9l9bRJzSIMY2Ncfnbd", ""),
+            new channel_1.Channel(3483, "ТНТ", "dVE62vEGLVVF11c8aZfoV", ""),
+            new channel_1.Channel(3554, "CCTV 9 Documentary", "7JbfOxL9Up0EKZGTFCTZS", ""),
+            new channel_1.Channel(3629, "Comedy TV", "YHLurgYa7FlXeF8mpaYBa", ""),
         ]
     },
     {
@@ -379,116 +92,28 @@ exports.CHANNELS = [
         "name": "News",
         "icon": "fa fa-newspaper-o",
         "channels": [
-            {
-                "id": 3501,
-                "name": "100 ТВ",
-                "session": "YmBoldAshta25kgvPd1eM"
-            },
-            {
-                "id": 3526,
-                "name": "BBC World News",
-                "session": "Dspp6YKI7Edm0o6s6Bese"
-            },
-            {
-                "id": 3538,
-                "name": "CCTV",
-                "session": "tBSKRrTsJ38dhMieuGsyO"
-            },
-            {
-                "id": 3538,
-                "name": "CCTV 4",
-                "session": "tBSKRrTsJ38dhMieuGsyO"
-            },
-            {
-                "id": 3492,
-                "name": "CNN International",
-                "session": "k2ItjhVdKjaklf1IRYt8Y"
-            },
-            {
-                "id": 3629,
-                "name": "Comedy TV",
-                "session": "YHLurgYa7FlXeF8mpaYBa"
-            },
-            {
-                "id": 3506,
-                "name": "Deutsche Welle",
-                "session": "2brZnIZc0ZaL6YZRztBYN"
-            },
-            {
-                "id": 3491,
-                "name": "EuroNews",
-                "session": "3shHPhsADHbMD9AjyRy1r"
-            },
-            {
-                "id": 3520,
-                "name": "France 24",
-                "session": "BKYdUXdGgzbnNzGKYaXIA"
-            },
-            {
-                "id": 3549,
-                "name": "Look TV",
-                "session": "H95f6L0c1Aodseekk1jpF"
-            },
-            {
-                "id": 3671,
-                "name": "News One",
-                "session": "tIOZrJGypm5g3BZNhMsNL"
-            },
-            {
-                "id": 3530,
-                "name": "Russia Today",
-                "session": "izYy0K3uztO8hvrxho7A5"
-            },
-            {
-                "id": 3493,
-                "name": "TV5 Monde news",
-                "session": "PsFEiYmcubsseiacs1Z2Z"
-            },
-            {
-                "id": 3532,
-                "name": "Дождь",
-                "session": "yxLeXbZuGStPfxVU17Adi"
-            },
-            {
-                "id": 3509,
-                "name": "Закон ТВ",
-                "session": "XsYGAO5sEtu52s6sGdzvc"
-            },
-            {
-                "id": 3540,
-                "name": "Комсомольская правда",
-                "session": "bZ33KsyvaUTat3hZ5Lidt"
-            },
-            {
-                "id": 3496,
-                "name": "Мир",
-                "session": "oShuffo3D9tDvdRRe77IA"
-            },
-            {
-                "id": 3481,
-                "name": "НТВ",
-                "session": "l1ORZ9ly7ObyV12kpJGIE"
-            },
-            {
-                "id": 3691,
-                "name": "Первый деловой",
-                "session": "dcMo6IIc7RhATXXc0M8gN"
-            },
-            {
-                "id": 3528,
-                "name": "Первый Метео",
-                "session": "OhaCkafhhUp8Ty82pV7zN"
-            },
-            {
-                "id": 3495,
-                "name": "РБК",
-                "session": "e9LaeZxvl14gMV42ZRRlu"
-            },
-            {
-                "id": 3595,
-                "name": "Совершенно секретно",
-                "session": "YojFzmFAK9hOZtdXiDDAJ"
-            }
+            new channel_1.Channel(3501, "100 ТВ", "YmBoldAshta25kgvPd1eM", ""),
+            new channel_1.Channel(3526, "BBC World News", "Dspp6YKI7Edm0o6s6Bese", ""),
+            new channel_1.Channel(3538, "CCTV", "tBSKRrTsJ38dhMieuGsyO", ""),
+            new channel_1.Channel(3538, "CCTV 4", "tBSKRrTsJ38dhMieuGsyO", ""),
+            new channel_1.Channel(3492, "CNN International", "k2ItjhVdKjaklf1IRYt8Y", ""),
+            new channel_1.Channel(3629, "Comedy TV", "YHLurgYa7FlXeF8mpaYBa", ""),
+            new channel_1.Channel(3506, "Deutsche Welle", "2brZnIZc0ZaL6YZRztBYN", ""),
+            new channel_1.Channel(3491, "EuroNews", "3shHPhsADHbMD9AjyRy1r", ""),
+            new channel_1.Channel(3520, "France 24", "BKYdUXdGgzbnNzGKYaXIA", ""),
+            new channel_1.Channel(3549, "Look TV", "H95f6L0c1Aodseekk1jpF", ""),
+            new channel_1.Channel(3671, "News One", "tIOZrJGypm5g3BZNhMsNL", ""),
+            new channel_1.Channel(3530, "Russia Today", "izYy0K3uztO8hvrxho7A5", ""),
+            new channel_1.Channel(3493, "TV5 Monde news", "PsFEiYmcubsseiacs1Z2Z", ""),
+            new channel_1.Channel(3532, "Дождь", "yxLeXbZuGStPfxVU17Adi", ""),
+            new channel_1.Channel(3509, "Закон ТВ", "XsYGAO5sEtu52s6sGdzvc", ""),
+            new channel_1.Channel(3540, "Комсомольская правда", "bZ33KsyvaUTat3hZ5Lidt", ""),
+            new channel_1.Channel(3496, "Мир", "oShuffo3D9tDvdRRe77IA", ""),
+            new channel_1.Channel(3481, "НТВ", "l1ORZ9ly7ObyV12kpJGIE", ""),
+            new channel_1.Channel(3691, "Первый деловой", "dcMo6IIc7RhATXXc0M8gN", ""),
+            new channel_1.Channel(3528, "Первый Метео", "OhaCkafhhUp8Ty82pV7zN", ""),
+            new channel_1.Channel(3495, "РБК", "e9LaeZxvl14gMV42ZRRlu", ""),
+            new channel_1.Channel(3595, "Совершенно секретно", "YojFzmFAK9hOZtdXiDDAJ", ""),
         ]
     },
     {
@@ -496,12 +121,30 @@ exports.CHANNELS = [
         "name": "Films",
         "icon": "fa fa-film",
         "channels": [
-            {
-                "id": 3603,
-                "name": "Настоящее Страшное Телевидение",
-                "session": "NBfZCAASvs51jY0d9Ockd"
-            },
+            new channel_1.Channel(3603, "Настоящее Страшное Телевидение", "NBfZCAASvs51jY0d9Ockd", "http://only-tv.org/uppod-hls.swf?comment=1&st=41AchBG5DZjaI=xz58ixanpEdQVQm5JBpdwL9m0ybpm5vzmQwDNBGoi3BwDRW5nTtu0c9BMrk&debug=1&file=http://176.114.2.10:8080/nst/index.m3u8?token=9619411a9fd92c685b9a03061154e4f6"),
+            new channel_1.Channel(3562, "CBS Drama", "VDsGe8ieJdVAIeroJhLri", ""),
+            new channel_1.Channel(3570, "CBS Reality", "NEpOe7SynciSvOXsY343M", ""),
+            new channel_1.Channel(3681, "Enter Film", "Lj78XPApnBK9xr2OvkU0B", ""),
+            new channel_1.Channel(3533, "Europa Plus TV", "vlIm36yM5ZEm8c4eusI3t", ""),
+            new channel_1.Channel(3580, "TV 1000 film", "ClyEvt7viKVPhx08kDEas", ""),
+            new channel_1.Channel(3613, "TV 1000 Action East", "vNBG9ZUOiOgucLRvIcFiY", ""),
+            new channel_1.Channel(3604, "TV 1000 Русское кино", "krjjnuNTv7eayL0mvNvaV", ""),
+            new channel_1.Channel(3591, "Дом кино", "EE3XzIPMV8biJg7L7phNK", ""),
+            new channel_1.Channel(3611, "Иллюзион+", "vlcn39raxs7cYdMTPNxg9", ""),
+            new channel_1.Channel(3585, "Индия", "JOIO3BceP8B30OT97TvoP", ""),
+            new channel_1.Channel(3568, "Комедия ТВ", "yaIihFbEtjREVaai0kmxV", ""),
+            new channel_1.Channel(3579, "Много ТВ", "vVio6hgJ9s1RBjYHAOay0", ""),
+            new channel_1.Channel(3624, "НТВ+ Кино плюс", "xTsvYpb2CedrUUfS7EOLG", ""),
+            new channel_1.Channel(3587, "НТВ+ Кино Союз", "dxx6IMEfl0C7rZTH1J06N", ""),
+            new channel_1.Channel(3651, "НТВ+ Кинолюкс", "pPyxzu2d8xhtTc4vH9IGA", ""),
+            new channel_1.Channel(3559, "НТВ+ Наше кино", "C5tup2s1xTtk0HGdv2eYC", ""),
+            new channel_1.Channel(3586, "НТВ+ Наше новое кино", "UMAZZn87AnzuHTKycBVXU", ""),
+            new channel_1.Channel(3657, "Русский бестселлер", "ItvrO4e0H6fnXyRixj6mR", ""),
+            new channel_1.Channel(3602, "Русский иллюзион", "Ixc826RrZN2haiY4mYAi4", ""),
+            new channel_1.Channel(3647, "Русский роман", "N6pvdNF03mHnpFfkmx02n", ""),
+            new channel_1.Channel(3572, "Усадьба", "PAxbGC6nrJB9dRKIXttMu", ""),
+            new channel_1.Channel(3612, "Феникс+ Кино", "k2HXAtfU8By6JJuh47u0m", ""),
         ]
-    }
+    },
 ];
 //# sourceMappingURL=channels.js.map

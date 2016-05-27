@@ -19,7 +19,21 @@ export class DashboardComponent implements OnInit {
 
     ngOnInit() {
         this.channelService.getChannels()
-            .then(channels => this.channels = channels);
+            .then((categories) => {
+                for (let category of categories) {
+                    category.channels.sort((a, b) => {
+                        if (a.name > b.name) {
+                            return 1;
+                        }
+                        if (a.name < b.name) {
+                            return -1;
+                        }
+                        return 0
+                    })
+                    this.channels.push(category)
+                }
+
+            });
     }
 
     gotoDetail(category: Category, channel: Channel) {

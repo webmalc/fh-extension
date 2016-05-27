@@ -1,10 +1,6 @@
 <div *ngIf="channel">
     <h3>
-        {{ channel.name}}
+        {{ channel.name}} &nbsp; <a [routerLink]="['Dashboard']" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Channels list</a>
     </h3>
-    <iframe src="http://clients.cdnet.tv/flashbroadcast.php?channel={{ channel.id }}&session={{ channel.session }}" frameborder="0" width="700" height="400"></iframe>
-    <br>
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <a [routerLink]="['Dashboard']" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Channels list</a>
-    </div>
+    <iframe src="{{ channel.playerCode }}" frameborder="0" width="100%" height="90%"></iframe>
 </div>
